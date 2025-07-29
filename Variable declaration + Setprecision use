@@ -1,0 +1,22 @@
+#include<iostream>
+#include <iomanip> 
+using namespace std;
+
+int main()  {
+    // variable declaration
+    int a;
+    long b;
+    char c;
+    float d;
+    double e;
+    
+    cin >> a >> b >> c >> d >> e ; //input
+    
+    cout << a << endl; //output
+    cout << b << endl; 
+    cout << c << endl; 
+    cout << fixed << setprecision(3) << d << endl;  // fixed returns same decimal values everytime.
+    cout << fixed << setprecision(9) << e << endl;  // setprecision() is used to define the no. of decimals.
+    
+    return 0;
+}
