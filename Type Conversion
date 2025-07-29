@@ -1,0 +1,11 @@
+#include<iostream>
+
+using namespace std;
+
+int main()  {
+    char ch;
+    cin>>ch;
+    //this converts char value int ASCII value (type conversion concept)
+    cout << (int)ch;
+    return 0;
+}
