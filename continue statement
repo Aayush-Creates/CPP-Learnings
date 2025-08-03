@@ -1,0 +1,16 @@
+#include<iostream>
+
+using namespace std;
+
+int main()  {
+    int N;
+    cin>>N;
+  // for loop initialiased using i = 0 and it runs(value of i gets increased everytime) till i is less than N 
+    for (int i = 0; i < N; i++) { 
+        if (i % 2 == 0) { //check for even number
+            continue;  // skip the even number
+        }
+        cout << i << endl; //print odd number.
+    }
+    return 0;
+}
