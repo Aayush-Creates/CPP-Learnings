@@ -1,0 +1,19 @@
+//Naive Solution
+class Solution {
+  public:
+    vector<int> search(string &pat, string &txt) {
+        // code here
+        int n = pat.size();
+        int m = txt.size();
+        vector<int> ans;
+        
+        for(int i = 0; i <=m-n;i++){
+            int j;
+            for(j = 0; j < n;j++){
+                if(txt[i+j] != pat[j]) break;
+            }
+            if(j == n) ans.push_back(i);
+        }
+        return ans;
+    }
+};
